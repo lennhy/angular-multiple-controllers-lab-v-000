@@ -13,7 +13,10 @@
             Hello, {{ vm.name }}!
             Your email is {{ vm.email }}.
             Your phone number is {{ vm.phone }}.
-            <button ng-click="vm.changeName()">Change name</button>
+            <div ng-controller="StaffController">
+              Your staff's phone number is {{vm.phone}}.
+              <button ng-click="vm.changeName()">Change name</button>
+            </div>
         </div>
     </div>
 
